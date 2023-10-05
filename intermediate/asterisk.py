@@ -20,7 +20,9 @@ def foo(a, b, *args, **kwargs):
   for key in kwargs:
     print(key, kwargs[key])
 
+print("FOO")
 foo(1, 2, 3, 4, 5, six=6, seven=7)
+print("END FOO")
 
 # unpacking lists
 my_list = [1, 2, 3]

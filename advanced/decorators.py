@@ -1,7 +1,5 @@
-
-
 # commonly used as a timer decorator to calculate the time a function takes to execute
-# deug decorator to print the arguments and return value of a function
+# debug decorator to print the arguments and return value of a function
 # check decorator to check if the arguments of a function are valid
 # cache return values or add information or update the state
 
@@ -32,7 +30,7 @@ import functools
 # with arguments
 def my_decorator(func):
 
-  @functools.wraps(func)
+  @functools.wraps(func) # preserve the information of the original function
   def wrapper(*args, **kwargs):
     # do something before
     # print('Start')
@@ -81,7 +79,7 @@ def print_lastname():
 
 print_lastname()
 
-# Class decorator: do the same as function decorator but used to maintain and update a state
+# Class decorator: do the same as function decorator but tipically used to maintain and update a state
 
 class CountCalls:
   def __init__(self, func):

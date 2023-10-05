@@ -61,3 +61,4 @@ newlist = mylist[:] # same as above using slicing
 
 # list comprehension
 newlist = [x*x for x in mylist if x % 2 == 0] # square each item in list if it is even
+

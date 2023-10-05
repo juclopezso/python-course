@@ -16,7 +16,6 @@
 # - IPC (Inter Process Communication) is more complex
 
 
-
 # Thread
 # It's an entity within a process that can be scheduled for execution (also known as lightweight process)
 # A process can spawn multiple threads
@@ -28,7 +27,7 @@
 # Disafvantages:
 # - GIL allows just one thread at a time, there is no parallelism
 # - No effect for CPU-bound tasks
-# - Not interruptable or killable
+# - Not interruptable or killable. Could cause memory leaks
 # - Careful with raced conditions. Threads share the same memory space, so if two threads try to access the same variable at the same time, the result can be unpredictable
 
 # GIL: Global Interpreter Lock: 

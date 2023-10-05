@@ -1,6 +1,6 @@
 # Context managers
 # great tool for resource management
-# allow to allocate al release recoources precisely 
+# allow to allocate and release resources precisely 
 
 # with open file example
 # much cleaner and concise
@@ -63,3 +63,4 @@ with open_managed_file('notes.txt') as f:
   f.something() # to test the exception handling
 
 print('continuing...')
+
